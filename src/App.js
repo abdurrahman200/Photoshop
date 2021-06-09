@@ -20,12 +20,12 @@ const App = () => {
   }, [term]);
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto sm:mx-auto">
       <Search searchText={(text) => setTerm(text)} />
       {isLoading ? (
         <h3 className="text-center mr-auto text-7xl">Loading</h3>
       ) : (
-        <div className="grid grid-cols-5 gap-2 " >
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 gap-4">
           {images.map((image) => (
             <ImageCard key={image.id} image={image} />
           ))}

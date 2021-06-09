@@ -10,8 +10,8 @@ const Search = ({ searchText }) => {
 
   return (
     <div>
-      <div className="max-w-sm rounded overflow-hidden my-10 mx-auto">
-        <form className="w-full max-w-sm" onSubmit={onSubmit}>
+      <div className=" rounded overflow-hidden my-10 mx-auto">
+        <form className="w-full " onSubmit={onSubmit}>
           <div className="flex items-center border-black border-b-2 font-bold border-teal-500 py-4">
             <input
               onChange={(e) => setText(e.target.value)}
@@ -23,7 +23,7 @@ const Search = ({ searchText }) => {
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="submit"
             >
-             Search
+              Search
             </button>
           </div>
         </form>

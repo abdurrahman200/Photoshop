@@ -5,7 +5,7 @@ const ImageCard = ({ image }) => {
   const tags = image.tags.split(",");
   return (
     <>
-      <div className="max-w-sm overflow-hidden rounded-sm shadow-lg bg-blend-color">
+      <div className="overflow-hidden rounded-sm shadow-lg bg-blend-color">
         <img src={webformatURL} alt="random" />
         <h2 className="font-bold text-purple-500 my-3"> {user}</h2>
 
