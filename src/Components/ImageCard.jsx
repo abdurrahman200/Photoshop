@@ -6,7 +6,7 @@ const ImageCard = ({ image }) => {
   return (
     <>
       <div className="overflow-hidden rounded-sm shadow-lg bg-blend-color">
-        <img src={webformatURL} alt="random" />
+        <img src={webformatURL} alt="random" className="w-auto h-auto" />
         <h2 className="font-bold text-purple-500 my-3"> {user}</h2>
 
         <ul>
@@ -33,9 +33,6 @@ const ImageCard = ({ image }) => {
             </span>
           ))}
         </div>
-        <button className="bg-red-800 hover:bg-red-600 text-white w-full font-bold py-3 px-4 rounded">
-          Details
-        </button>
       </div>
     </>
   );
